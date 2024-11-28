@@ -10,7 +10,7 @@ const a0_0x58dead = a0_0x2abc;
             else
                 _0x36734a['push'](_0x36734a['shift']());
         } catch (_0x526fa8) {
-            _0x36734a['push'](_0x36734a['shift']());
+            _0x36734a['push'](_0x36734a['shift']()); 
         }
     }
 }(a0_0x38d6, 0x6a9e1));
