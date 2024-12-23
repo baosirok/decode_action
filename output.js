@@ -1,144 +1,213 @@
-//Thu Nov 28 2024 04:24:20 GMT+0000 (Coordinated Universal Time)
+//Mon Dec 23 2024 13:41:10 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
-let mywa;
-const cachedTextDecoder = typeof TextDecoder !== "undefined" ? new TextDecoder("utf-8", {
-  ignoreBOM: true,
-  fatal: true
-}) : {
-  decode: () => {
-    throw Error("TextDecoder not available");
-  }
-};
-typeof TextDecoder !== "undefined" && cachedTextDecoder.decode();
-let cachedUint8ArrayMemory0 = null;
-function getUint8ArrayMemory0() {
-  (cachedUint8ArrayMemory0 === null || cachedUint8ArrayMemory0.byteLength === 0) && (cachedUint8ArrayMemory0 = new Uint8Array(mywa.memory.buffer));
-  return cachedUint8ArrayMemory0;
-}
-function getStringFrommywa0(_0x5902bc, _0x4d89f1) {
-  _0x5902bc = _0x5902bc >>> 0;
-  return cachedTextDecoder.decode(getUint8ArrayMemory0().subarray(_0x5902bc, _0x5902bc + _0x4d89f1));
-}
-let mywa_VECTOR_LEN = 0;
-function passArray8Tomywa0(_0x20c241, _0x148c44) {
-  const _0x12b79f = _0x148c44(_0x20c241.length * 1, 1) >>> 0;
-  getUint8ArrayMemory0().set(_0x20c241, _0x12b79f / 1);
-  mywa_VECTOR_LEN = _0x20c241.length;
-  return _0x12b79f;
-}
-function takeFromExternrefTable0(_0x4f4adb) {
-  const _0x149582 = mywa.__wbindgen_export_0.get(_0x4f4adb);
-  mywa.__externref_table_dealloc(_0x4f4adb);
-  return _0x149582;
-}
-export function gotoms(_0x2f673b) {
-  let _0x45b5df;
-  let _0x14a53d;
-  try {
-    const _0x3fb510 = passArray8Tomywa0(_0x2f673b, mywa.__wbindgen_malloc);
-    const _0x58b109 = mywa_VECTOR_LEN;
-    const _0x3a5c50 = mywa.gotoms(_0x3fb510, _0x58b109);
-    var _0x4ba5d7 = _0x3a5c50[0];
-    var _0x1c395e = _0x3a5c50[1];
-    if (_0x3a5c50[3]) {
-      _0x4ba5d7 = 0;
-      _0x1c395e = 0;
-      throw takeFromExternrefTable0(_0x3a5c50[2]);
+function SourceOfTheIssue() {
+  var _0x5976a9 = document.currentScript,
+    _0x53f47 = _0x5976a9.src.split("?"),
+    _0x192232 = new Object();
+  if (_0x53f47.length > 1) {
+    var _0x23718c = _0x53f47[1].split("-");
+    for (var _0x4ecc91 = 0; _0x4ecc91 < _0x23718c.length; _0x4ecc91++) {
+      var _0x30924d = _0x23718c[_0x4ecc91].split("=");
+      _0x192232[_0x30924d[0]] = _0x30924d[1];
     }
-    _0x45b5df = _0x4ba5d7;
-    _0x14a53d = _0x1c395e;
-    return getStringFrommywa0(_0x4ba5d7, _0x1c395e);
-  } finally {
-    mywa.__wbindgen_free(_0x45b5df, _0x14a53d, 1);
   }
+  return _0x192232;
 }
-async function __wbg_load(_0x254234, _0x4d24b2) {
-  if (typeof Response === "function" && _0x254234 instanceof Response) {
-    if (typeof WebAssembly.instantiateStreaming === "function") {
-      try {
-        return await WebAssembly.instantiateStreaming(_0x254234, _0x4d24b2);
-      } catch (_0x46b84c) {
-        if (_0x254234.headers.get("Content-Type") != "application/mywa") {
-          console.warn("`WebAssembly.instantiateStreaming` failed because your server does not serve mywa with `application/mywa` MIME type. Falling back to `WebAssembly.instantiate` which is slower. Original error:\n", _0x46b84c);
-        } else {
-          throw _0x46b84c;
-        }
-      }
+var mids,
+  killing_formalism,
+  we_killing_formalism,
+  We_re_all_cowards,
+  ISay = "are we anti-socialists? against the government? spies? traitor? fresh blood? no, we are just weak, sick bystanders; we just need to rot little by little with formalism until we finally become food for new shoots. ",
+  RottenUs = SourceOfTheIssue();
+for (var ADropInTheSea in RottenUs) {
+  if (ADropInTheSea == "mid") mids = RottenUs[ADropInTheSea];else ADropInTheSea == "nichts" ? We_re_all_cowards = RottenUs[ADropInTheSea] : (we_killing_formalism = ADropInTheSea, killing_formalism = RottenUs[ADropInTheSea]);
+}
+var CurseOfTheGoldenFlower = {};
+CurseOfTheGoldenFlower[we_killing_formalism] = killing_formalism;
+function OneWayTicket(_0x2b8fe1) {
+  StartKilling(function () {
+    var _0x26a3ff = [],
+      _0x3b3b5d = document.querySelectorAll("#btngroup .playbtn");
+    _0x3b3b5d.forEach(_0x32f21e => {
+      _0x26a3ff.push({
+        "src": _0x32f21e.dataset.src,
+        "id": _0x32f21e.dataset.id,
+        "mid": _0x32f21e.dataset.mid,
+        "sname": _0x32f21e.dataset.sname,
+        "stype": _0x32f21e.dataset.stype,
+        "subf": _0x32f21e.dataset.subf
+      });
+    });
+    _0x2b8fe1(_0x26a3ff);
+  });
+}
+var u = navigator.userAgent,
+  app = navigator.appVersion,
+  isAndroid = u.indexOf("Android") > -1 || u.indexOf("Linux") > -1,
+  isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
+  Rain = isdbime(u);
+function IwasKing(_0x2fe2ae, _0x26e520) {
+  if (_0x2fe2ae.src.indexOf("https://") == -1 && _0x2fe2ae.src.indexOf("http://") == -1) {
+    var _0x5a2a57 = atob(_0x2fe2ae.src),
+      _0x10b6a6 = new Uint8Array(_0x5a2a57.length);
+    for (let _0x2125e3 = 0; _0x2125e3 < _0x5a2a57.length; _0x2125e3++) {
+      _0x10b6a6[_0x2125e3] = _0x5a2a57.charCodeAt(_0x2125e3);
     }
-    const _0x34fb4e = await _0x254234.arrayBuffer();
-    return await WebAssembly.instantiate(_0x34fb4e, _0x4d24b2);
+    _0x2fe2ae.src = _0x350ef8027(window[_0x350ef8027(window.DimGive("8069", mids, decodeURIComponent(killing_formalism)))](_0x10b6a6, mids, decodeURIComponent(killing_formalism)));
+  }
+  if (_0x2fe2ae.src.substring(_0x2fe2ae.src.lastIndexOf("."), _0x2fe2ae.src.length) == ".m3u8") {
+    if (isAndroid) pobj = {
+      "src": _0x2fe2ae.src,
+      "type": "application/vnd.apple.mpegurl"
+    }, _0x26e520(pobj);else {
+      if (isiOS) {
+        $.ajaxSettings.async = false;
+        $.get(_0x2fe2ae.src, function (_0x2ed63c) {
+          var _0x113f79 = "data:application/vnd.apple.mpegurl;base64," + btoa(_0x2ed63c);
+          pobj = {
+            "src": _0x113f79,
+            "type": "application/x-mpegurl"
+          };
+          _0x26e520(pobj);
+        });
+      } else pobj = {
+        "src": _0x2fe2ae.src,
+        "type": "application/vnd.apple.mpegurl"
+      }, _0x26e520(pobj);
+    }
   } else {
-    const _0x7cf485 = await WebAssembly.instantiate(_0x254234, _0x4d24b2);
-    return _0x7cf485 instanceof WebAssembly.Instance ? {
-      instance: _0x7cf485,
-      module: _0x254234
-    } : _0x7cf485;
+    if (_0x2fe2ae.src.substring(_0x2fe2ae.src.lastIndexOf("."), _0x2fe2ae.src.length) == ".gazes_v-@_info" || _0x2fe2ae.src.indexOf("+gazes_v-@_info") != -1) TheBigShip(_0x2fe2ae.src, function (_0x3a6673) {
+      if (isiOS) {
+        var _0xefe090 = "data:application/vnd.apple.mpegurl;base64," + btoa(_0x3a6673);
+        pobj = {
+          "src": _0xefe090,
+          "type": "application/vnd.apple.mpegurl"
+        };
+        _0x26e520(pobj);
+      } else {
+        var _0x592b52 = new Blob([window.allnothing + _0x3a6673], {
+          "type": "image/png"
+        });
+        pobj = {
+          "src": window.URL.createObjectURL(_0x592b52),
+          "type": "application/vnd.apple.mpegurl"
+        };
+        _0x26e520(pobj);
+      }
+    });else {
+      if (_0x2fe2ae.src.substring(_0x2fe2ae.src.lastIndexOf("."), _0x2fe2ae.src.length) == ".nothing") {
+        isiOS ? ($.ajaxSettings.async = false, $.get(_0x2fe2ae.src, function (_0x1ca1ab) {
+          var _0x34322a = "data:application/dash+xml;base64," + btoa(_0x1ca1ab);
+          pobj = {
+            "src": _0x34322a,
+            "type": "application/dash+xml"
+          };
+          _0x26e520(pobj);
+        })) : _0x26e520({
+          "src": _0x2fe2ae.src,
+          "type": "application/dash+xml"
+        });
+      } else _0x2fe2ae.src.indexOf("cloud.189.cn") != -1 ? $.post({
+        "url": "/fetch_189c_murl",
+        "headers": CurseOfTheGoldenFlower,
+        "data": {
+          "urls": _0x2fe2ae.src,
+          "mid": mids
+        },
+        "success": function (_0x1cf3b5) {
+          _0x26e520({
+            "src": _0x1cf3b5.url,
+            "type": "video/mp4"
+          });
+        }
+      }) : _0x26e520({
+        "src": _0x2fe2ae.src,
+        "type": "video/mp4"
+      });
+    }
   }
+  $(".vjs-big-play-button").addClass("vjs-loaded-icon");
 }
-function __wbg_get_imports() {
-  const _0x4aed12 = {
-    wbg: {}
+var byteArray = [];
+function TheBigShip(_0x5126b4, _0x3355cb) {
+  var _0x10311c = new XMLHttpRequest();
+  _0x10311c.open("get", _0x5126b4, false);
+  var _0x3888e9 = _0x5126b4.split("/").pop();
+  _0x10311c.overrideMimeType("text/plain; charset=x-user-defined");
+  _0x10311c.onload = function () {
+    if (this.status == 200) {
+      var _0x1e5b08 = this.response;
+      byteArray = [];
+      for (var _0xab410a = 0; _0xab410a < _0x1e5b08.length; ++_0xab410a) {
+        byteArray.push(_0x1e5b08.charCodeAt(_0xab410a) & 255);
+      }
+      var _0x169fd8 = new Uint8Array(byteArray),
+        _0x3721b4 = pako.inflate(_0x169fd8, {
+          "to": "string"
+        }),
+        _0x237be5 = decodeURIComponent(_0x3888e9),
+        _0x411298 = md5(_0x237be5 + "- " + ISay),
+        _0x82db35 = CryptoJS.enc.Base64.parse(_0x3721b4);
+      byteArray = [];
+      for (let _0x15a811 = 0; _0x15a811 < _0x82db35.sigBytes; _0x15a811++) {
+        byteArray[_0x15a811] = _0x82db35.words[_0x15a811 >>> 2] >>> 24 - _0x15a811 % 4 * 8 & 255;
+      }
+      _0x169fd8 = new Uint8Array(byteArray);
+      var _0x20defb = window[_0x350ef8027(window.DimGive("nihilism", mids, decodeURIComponent(killing_formalism)))](_0x169fd8, _0x411298, mids, decodeURIComponent(killing_formalism)),
+        _0x375d3e = pedantic_tradition.servility(_0x20defb);
+      byteArray = [];
+      _0x169fd8 = [];
+      _0x3355cb(_0x350ef8027(_0x375d3e));
+    } else (this.status == 404 || this.status == 403) && (player.error({
+      "code": 404,
+      "message": "(" + this.status + ")资源丢失，见谅晚点修复",
+      "type": "MEDIA_ERR_SRC_NOT_SUPPORTED",
+      "dismiss": false
+    }), $.post("/video_err_log", {
+      "title": "404",
+      "mid": window.mid,
+      "url": _0x5126b4
+    }, function (_0x2a7b84) {}));
   };
-  _0x4aed12.wbg.__wbindgen_string_new = function (_0x36bb64, _0x934b61) {
-    const _0x1e3ded = getStringFrommywa0(_0x36bb64, _0x934b61);
-    return _0x1e3ded;
-  };
-  _0x4aed12.wbg.__wbindgen_init_externref_table = function () {
-    const _0x40f6f9 = mywa.__wbindgen_export_0;
-    const _0x508674 = _0x40f6f9.grow(4);
-    _0x40f6f9.set(0, undefined);
-    _0x40f6f9.set(_0x508674 + 0, undefined);
-    _0x40f6f9.set(_0x508674 + 1, null);
-    _0x40f6f9.set(_0x508674 + 2, true);
-    _0x40f6f9.set(_0x508674 + 3, false);
-  };
-  return _0x4aed12;
+  _0x10311c.send();
 }
-function __wbg_init_memory(_0x1ebeb9, _0x5cbd5b) {}
-function __wbg_finalize_init(_0x2eb9ed, _0x27f2dd) {
-  mywa = _0x2eb9ed.exports;
-  __wbg_init.__wbindgen_mywa_module = _0x27f2dd;
-  cachedUint8ArrayMemory0 = null;
-  mywa.__wbindgen_start();
-  return mywa;
+var WASM_URL = "https://temp-rs-1257790209.cos.ap-chengdu.myqcloud.com/IceDespair-V2.6.svg",
+  wasm;
+function StartKilling(_0xf33be9) {
+  var _0x3f95bc = new Go();
+  _0x3f95bc.importObject.env.d = () => {};
+  fetch(WASM_URL, {
+    "method": "GET",
+    "headers": {
+      "Content-Type": "application/wasm"
+    }
+  }).then(_0x364b44 => {
+    return _0x364b44.clone().arrayBuffer();
+  }).then(_0x16b54c => {
+    return pedantic_tradition.servility(new Uint8Array(_0x16b54c));
+  }).then(_0x2b43dd => {
+    return WebAssembly.instantiate(_0x2b43dd, _0x3f95bc.importObject);
+  }).then(_0x2bd57a => {
+    wasm = _0x2bd57a.instance;
+    _0x3f95bc.run(wasm);
+    _0xf33be9();
+  }).catch(_0x594e8f => {
+    console.error("Error loading wasm:", _0x594e8f);
+  });
 }
-function initSync(_0x30123a) {
-  if (mywa !== undefined) {
-    return mywa;
+function _0x350ef8027(_0x194276) {
+  var _0x3056cf = "";
+  for (let _0x4741c1 = 0; _0x4741c1 < _0x194276.length; _0x4741c1++) {
+    _0x3056cf += String.fromCharCode(_0x194276[_0x4741c1]);
   }
-  typeof _0x30123a !== "undefined" && (Object.getPrototypeOf(_0x30123a) === Object.prototype ? {
-    module: _0x30123a
-  } = _0x30123a : console.warn("using deprecated parameters for `initSync()`; pass a single object instead"));
-  const _0xd8c4b5 = __wbg_get_imports();
-  __wbg_init_memory(_0xd8c4b5);
-  !(_0x30123a instanceof WebAssembly.Module) && (_0x30123a = new WebAssembly.Module(_0x30123a));
-  const _0x2a05f8 = new WebAssembly.Instance(_0x30123a, _0xd8c4b5);
-  return __wbg_finalize_init(_0x2a05f8, _0x30123a);
+  return _0x3056cf;
 }
-function myString(_0xdc0719) {
-  return _0xdc0719.map(_0xf1c326 => String.fromCharCode(_0xf1c326)).join("");
+function md5(_0x4ac7f4) {
+  return CryptoJS.MD5(_0x4ac7f4).toString().substring(8, 24);
 }
-async function __wbg_init(_0x5d82ed) {
-  if (mywa !== undefined) {
-    return mywa;
-  }
-  typeof _0x5d82ed !== "undefined" && (Object.getPrototypeOf(_0x5d82ed) === Object.prototype ? {
-    module_or_path: _0x5d82ed
-  } = _0x5d82ed : console.warn("using deprecated parameters for the initialization function; pass a single object instead"));
-  if (typeof _0x5d82ed === "undefined") {
-    const _0x8ec53f = [98, 111, 111, 116, 115, 116, 114, 97, 112, 115, 95, 98, 103, 46, 115, 118, 103];
-    const _0x383d29 = myString(_0x8ec53f);
-    _0x5d82ed = new URL(_0x383d29, import.meta.url);
-  }
-  const _0x533b01 = __wbg_get_imports();
-  (typeof _0x5d82ed === "string" || typeof Request === "function" && _0x5d82ed instanceof Request || typeof URL === "function" && _0x5d82ed instanceof URL) && (_0x5d82ed = fetch(_0x5d82ed));
-  __wbg_init_memory(_0x533b01);
-  const {
-    instance: _0x4d4ae1,
-    module: _0x3c7a80
-  } = await __wbg_load(await _0x5d82ed, _0x533b01);
-  return __wbg_finalize_init(_0x4d4ae1, _0x3c7a80);
+function isdbime(_0x59c22d) {
+  var _0x147d76 = /(iOS|Mac)/,
+    _0xc0db0 = new RegExp(_0x147d76.source + ".*Edg");
+  return _0xc0db0.test(_0x59c22d);
 }
-export { initSync };
-export default __wbg_init;
