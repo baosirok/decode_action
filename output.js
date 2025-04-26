@@ -1,221 +1,142 @@
-//Fri Apr 25 2025 06:50:44 GMT+0000 (Coordinated Universal Time)
+//Sat Apr 26 2025 09:17:30 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
-function SourceOfTheIssue() {
-  var _0x47fa5c = document.currentScript,
-    _0x413869 = _0x47fa5c.src.split("?"),
-    _0x2e587e = new Object();
-  if (_0x413869.length > 1) {
-    var _0x43094a = _0x413869[1].split("-");
-    for (var _0x3dae88 = 0; _0x3dae88 < _0x43094a.length; _0x3dae88++) {
-      {
-        var _0x1ac13b = _0x43094a[_0x3dae88].split("=");
-        _0x2e587e[_0x1ac13b[0]] = _0x1ac13b[1];
-      }
-    }
+async function encryptData(_0x50e60a, _0x4fa678, _0x5e0ef3) {
+  if (_0x4fa678.length !== 16) {
+    throw new Error("Key must be exactly 16 characters long.");
   }
-  return _0x2e587e;
-}
-var mids,
-  killing_formalism,
-  we_killing_formalism,
-  We_re_all_cowards,
-  ISay = "are we anti-socialists? against the government? spies? traitor? fresh blood? no, we are just weak, sick bystanders; we just need to rot little by little with utilitarianism and infighting until we finally become food for new shoots.",
-  RottenUs = SourceOfTheIssue();
-for (var ADropInTheSea in RottenUs) {
-  if (ADropInTheSea == "mid") mids = RottenUs[ADropInTheSea];else ADropInTheSea == "nichts" ? We_re_all_cowards = RottenUs[ADropInTheSea] : (we_killing_formalism = ADropInTheSea, killing_formalism = RottenUs[ADropInTheSea]);
-}
-var CurseOfTheGoldenFlower = {};
-CurseOfTheGoldenFlower[we_killing_formalism] = killing_formalism;
-function OneWayTicket(_0x2c4417) {
-  StartKilling(function () {
-    var _0x502e90 = [],
-      _0x27fcf6 = document.querySelectorAll("#btngroup .playbtn");
-    _0x27fcf6.forEach(_0x31fcc1 => {
-      _0x502e90.push({
-        "src": _0x31fcc1.dataset.src,
-        "id": _0x31fcc1.dataset.id,
-        "mid": _0x31fcc1.dataset.mid,
-        "sname": _0x31fcc1.dataset.sname,
-        "stype": _0x31fcc1.dataset.stype,
-        "subf": _0x31fcc1.dataset.subf
-      });
-    });
-    _0x2c4417(_0x502e90);
-  });
-}
-var u = navigator.userAgent,
-  app = navigator.appVersion,
-  isAndroid = u.indexOf("Android") > -1 || u.indexOf("Linux") > -1,
-  isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
-  Rain = isdbime(u);
-function hexToUint8Array(_0x4aac0a) {
-  if (_0x4aac0a.length % 2 !== 0) throw new Error("err");
-  const _0x1f72e7 = new Uint8Array(_0x4aac0a.length / 2);
-  for (let _0x317df4 = 0; _0x317df4 < _0x4aac0a.length; _0x317df4 += 2) {
-    _0x1f72e7[_0x317df4 / 2] = parseInt(_0x4aac0a.substr(_0x317df4, 2), 16);
+  if (_0x5e0ef3.length !== 12) {
+    throw new Error("IV must be exactly 12 characters long.");
   }
-  return _0x1f72e7;
-}
-function IwasKing(_0x373c66, _0x5ebb96) {
-  if (_0x373c66.src.indexOf("https://") == -1 && _0x373c66.src.indexOf("http://") == -1) {
-    var _0x26c999 = hexToUint8Array(_0x373c66.src);
-    _0x373c66.src = _0x350ef8027(window[_0x350ef8027(window.DimGive("8069", mids, decodeURIComponent(killing_formalism)))](_0x26c999, mids, decodeURIComponent(killing_formalism)));
-  }
-  if (_0x373c66.src.substring(_0x373c66.src.lastIndexOf("."), _0x373c66.src.length) == ".m3u8") {
-    if (isAndroid) pobj = {
-      "src": _0x373c66.src,
-      "type": "application/vnd.apple.mpegurl"
-    }, _0x5ebb96(pobj);else {
-      if (isiOS) {
-        $.ajaxSettings.async = false;
-        $.get(_0x373c66.src, function (_0x36f909) {
-          var _0x56d781 = "data:application/vnd.apple.mpegurl;base64," + btoa(_0x36f909);
-          pobj = {
-            "src": _0x56d781,
-            "type": "application/x-mpegurl"
-          };
-          _0x5ebb96(pobj);
-        });
-      } else {
-        pobj = {
-          "src": _0x373c66.src,
-          "type": "application/vnd.apple.mpegurl"
-        };
-        _0x5ebb96(pobj);
-      }
-    }
-  } else {
-    if (_0x373c66.src.substring(_0x373c66.src.lastIndexOf("."), _0x373c66.src.length) == ".gazes_v-@_info" || _0x373c66.src.indexOf("+gazes_v-@_info") != -1) TheBigShip(_0x373c66.src, function (_0x57022b) {
-      if (isiOS) {
-        var _0x3a9bd3 = "data:application/vnd.apple.mpegurl;base64," + btoa(_0x57022b);
-        pobj = {
-          "src": _0x3a9bd3,
-          "type": "application/vnd.apple.mpegurl"
-        };
-        _0x5ebb96(pobj);
-      } else {
-        {
-          var _0x23fdaa = new Blob([window.allnothing + _0x57022b], {
-            "type": "image/png"
-          });
-          pobj = {
-            "src": window.URL.createObjectURL(_0x23fdaa),
-            "type": "application/vnd.apple.mpegurl"
-          };
-          _0x5ebb96(pobj);
-        }
-      }
-    });else {
-      if (_0x373c66.src.substring(_0x373c66.src.lastIndexOf("."), _0x373c66.src.length) == ".nothing") isiOS ? ($.ajaxSettings.async = false, $.get(_0x373c66.src, function (_0x4f9940) {
-        var _0x3c5051 = "data:application/dash+xml;base64," + btoa(_0x4f9940);
-        pobj = {
-          "src": _0x3c5051,
-          "type": "application/dash+xml"
-        };
-        _0x5ebb96(pobj);
-      })) : _0x5ebb96({
-        "src": _0x373c66.src,
-        "type": "application/dash+xml"
-      });else _0x373c66.src.indexOf("cloud.189.cn") != -1 ? $.post({
-        "url": "/fetch_189c_murl",
-        "headers": CurseOfTheGoldenFlower,
-        "data": {
-          "urls": _0x373c66.src,
-          "mid": mids
-        },
-        "success": function (_0x4ef6f9) {
-          _0x5ebb96({
-            "src": _0x4ef6f9.url,
-            "type": "video/mp4"
-          });
-        }
-      }) : _0x5ebb96({
-        "src": _0x373c66.src,
-        "type": "video/mp4"
-      });
-    }
-  }
-  $(".vjs-big-play-button").addClass("vjs-loaded-icon");
-}
-var byteArray = [];
-function TheBigShip(_0xcc0cf9, _0x544208) {
-  var _0x21f116 = new XMLHttpRequest();
-  _0x21f116.open("get", _0xcc0cf9, false);
-  var _0x35ee6d = _0xcc0cf9.split("/").pop();
-  _0x21f116.overrideMimeType("text/plain; charset=x-user-defined");
-  _0x21f116.onload = function () {
-    if (this.status == 200) {
-      var _0x3b8a62 = this.response;
-      byteArray = [];
-      for (var _0x209937 = 0; _0x209937 < _0x3b8a62.length; ++_0x209937) {
-        byteArray.push(_0x3b8a62.charCodeAt(_0x209937) & 255);
-      }
-      var _0x3f0292 = new Uint8Array(byteArray),
-        _0x4de0b4 = pako.inflate(_0x3f0292, {
-          "to": "string"
-        }),
-        _0x41e0dc = decodeURIComponent(_0x35ee6d),
-        _0x786364 = md5(_0x41e0dc + "- " + ISay),
-        _0x26048d = CryptoJS.enc.Base64.parse(_0x4de0b4);
-      byteArray = [];
-      for (let _0x3d1d62 = 0; _0x3d1d62 < _0x26048d.sigBytes; _0x3d1d62++) {
-        byteArray[_0x3d1d62] = _0x26048d.words[_0x3d1d62 >>> 2] >>> 24 - _0x3d1d62 % 4 * 8 & 255;
-      }
-      _0x3f0292 = new Uint8Array(byteArray);
-      var _0x3de7bb = window[_0x350ef8027(window.DimGive("nihilism", mids, decodeURIComponent(killing_formalism)))](_0x3f0292, _0x786364, mids, decodeURIComponent(killing_formalism)),
-        _0x4e22f5 = pedantic_tradition.servility(_0x3de7bb);
-      byteArray = [];
-      _0x3f0292 = [];
-      _0x544208(window.epi(_0x350ef8027(_0x4e22f5)));
-    } else (this.status == 404 || this.status == 403) && (player.error({
-      "code": 404,
-      "message": "(" + this.status + ")资源丢失，见谅晚点修复",
-      "type": "MEDIA_ERR_SRC_NOT_SUPPORTED",
-      "dismiss": false
-    }), $.post("/video_err_log", {
-      "title": "404",
-      "mid": window.mid,
-      "url": _0xcc0cf9
-    }, function (_0x2afa80) {}));
+  const _0xea88bc = new TextEncoder();
+  const _0x28657c = _0xea88bc.encode(_0x50e60a);
+  const _0x3cb746 = _0xea88bc.encode(_0x4fa678);
+  const _0x51b00b = _0xea88bc.encode(_0x5e0ef3);
+  const _0x492f9d = {
+    name: "AES-GCM"
   };
-  _0x21f116.send();
+  const _0x5d905f = await crypto.subtle.importKey("raw", _0x3cb746, _0x492f9d, false, ["encrypt"]);
+  const _0x4163db = {
+    name: "AES-GCM",
+    iv: _0x51b00b
+  };
+  const _0x490a81 = await crypto.subtle.encrypt(_0x4163db, _0x5d905f, _0x28657c);
+  const _0x5c85cb = new Uint8Array(_0x490a81);
+  const _0x28364a = _0x5c85cb.slice(-16);
+  const _0x172da4 = _0x5c85cb.slice(0, -16);
+  const _0x175b2e = new Uint8Array([..._0x172da4, ..._0x28364a]);
+  return btoa(String.fromCharCode(..._0x175b2e));
 }
-var WASM_URL = "https://oos-cn.ctyunapi.cn/allnothing/static/IceDespair-V3.1.svg",
-  wasm;
-function StartKilling(_0x27edad) {
-  var _0x10c5ee = new Go();
-  fetch(WASM_URL, {
-    "method": "GET",
-    "headers": {
-      "Content-Type": "application/wasm"
-    }
-  }).then(_0x402ae2 => {
-    return _0x402ae2.clone().arrayBuffer();
-  }).then(_0x14477c => {
-    return pedantic_tradition.servility(new Uint8Array(_0x14477c));
-  }).then(_0x4db6e3 => {
-    return WebAssembly.instantiate(_0x4db6e3, _0x10c5ee.importObject);
-  }).then(_0x146853 => {
-    wasm = _0x146853.instance;
-    _0x10c5ee.run(wasm);
-    _0x27edad();
-  }).catch(_0x3d79f5 => {
-    console.error("Error loading wasm:", _0x3d79f5);
+function generateCanvasFingerprint(_0x10367a = {}) {
+  const _0x23a5a6 = document.createElement("canvas");
+  _0x23a5a6.width = 2000;
+  _0x23a5a6.height = 200;
+  const _0x40d0ad = _0x23a5a6.getContext("2d");
+  const _0x3be60f = {
+    canvasWinding: _0x40d0ad.isPointInPath(5, 5, "evenodd") === false ? "yes" : "no"
+  };
+  _0x40d0ad.rect(0, 0, 10, 10);
+  _0x40d0ad.rect(2, 2, 6, 6);
+  _0x40d0ad.textBaseline = "alphabetic";
+  _0x40d0ad.fillStyle = "#f60";
+  _0x40d0ad.fillRect(125, 1, 62, 20);
+  _0x40d0ad.fillStyle = "#069";
+  _0x40d0ad.font = _0x10367a.dontUseFakeFontInCanvas ? "11pt Arial" : "11pt no-real-font-123";
+  _0x40d0ad.fillText("Cwm fjordbank glyphs vext quiz, 😃", 2, 15);
+  _0x40d0ad.fillStyle = "rgba(102, 204, 0, 0.2)";
+  _0x40d0ad.font = "18pt Arial";
+  _0x40d0ad.fillText("Cwm fjordbank glyphs vext quiz, 😃", 4, 45);
+  _0x40d0ad.globalCompositeOperation = "multiply";
+  _0x40d0ad.fillStyle = "rgb(255,0,255)";
+  _0x40d0ad.beginPath();
+  _0x40d0ad.arc(50, 50, 50, 0, Math.PI * 2, true);
+  _0x40d0ad.closePath();
+  _0x40d0ad.fill();
+  _0x40d0ad.fillStyle = "rgb(0,255,255)";
+  _0x40d0ad.beginPath();
+  _0x40d0ad.arc(100, 50, 50, 0, Math.PI * 2, true);
+  _0x40d0ad.closePath();
+  _0x40d0ad.fill();
+  _0x40d0ad.fillStyle = "rgb(255,255,0)";
+  _0x40d0ad.beginPath();
+  _0x40d0ad.arc(75, 100, 50, 0, Math.PI * 2, true);
+  _0x40d0ad.closePath();
+  _0x40d0ad.fill();
+  _0x40d0ad.fillStyle = "rgb(255,0,255)";
+  _0x40d0ad.arc(75, 75, 75, 0, Math.PI * 2, true);
+  _0x40d0ad.arc(75, 75, 25, 0, Math.PI * 2, true);
+  _0x40d0ad.fill("evenodd");
+  if (_0x23a5a6.toDataURL) {
+    _0x3be60f.rawData = _0x23a5a6.toDataURL();
+    return generateSHA256(_0x3be60f.rawData).then(_0x3d944d => {
+      _0x3be60f.hash = _0x3d944d;
+      return _0x3be60f;
+    });
+  }
+  return Promise.resolve(_0x3be60f);
+}
+function generateSHA256(_0x24846e) {
+  const _0x17dae2 = window.crypto || window.msCrypto;
+  const _0x863a2e = new TextEncoder();
+  const _0xe4b766 = _0x863a2e.encode(_0x24846e);
+  return _0x17dae2.subtle.digest("SHA-256", _0xe4b766).then(_0x380088 => {
+    const _0x3d8845 = Array.from(new Uint8Array(_0x380088));
+    return _0x3d8845.map(_0x586d3b => _0x586d3b.toString(16).padStart(2, "0")).join("");
   });
 }
-function _0x350ef8027(_0x182d77) {
-  var _0x3a087e = "";
-  for (let _0x2655d4 = 0; _0x2655d4 < _0x182d77.length; _0x2655d4++) {
-    _0x3a087e += String.fromCharCode(_0x182d77[_0x2655d4]);
+async function getBrowserFont() {
+  const _0xb1258e = ["Arial", "Verdana", "Times New Roman", "Courier New", "Georgia", "Comic Sans MS", "Trebuchet MS", "Impact", "Tahoma"];
+  let _0xc56666 = 0;
+  _0xb1258e.forEach(_0x32011a => {
+    {
+      const _0x1ba293 = document.createElement("canvas");
+      const _0x4ce520 = _0x1ba293.getContext("2d");
+      _0x4ce520.font = "16px " + _0x32011a + ", monospace";
+      const _0x1e568b = _0x4ce520.measureText("abcdefghijklmnopqrstuvwxyz0123456789").width;
+      _0x4ce520.font = "16px monospace";
+      const _0x3040ef = _0x4ce520.measureText("abcdefghijklmnopqrstuvwxyz0123456789").width;
+      if (_0x1e568b !== _0x3040ef) {
+        _0xc56666++;
+      }
+    }
+  });
+  return Promise.resolve(_0xc56666);
+}
+const _0x5dae4e = {
+  dontUseFakeFontInCanvas: true
+};
+generateCanvasFingerprint(_0x5dae4e).then(async _0x523d96 => {
+  try {
+    const _0x4d62b9 = _0x523d96.hash;
+    if (!_0x4d62b9) {
+      throw new Error("Fingerprint hash is undefined or empty.");
+    }
+    const _0x224c54 = document.querySelector("meta[name^=\"cade\"]");
+    const _0x2ff42d = document.querySelector("meta[name^=\"8abv\"]");
+    const _0x12a969 = _0x224c54 ? _0x224c54.getAttribute("content") : "default_iv_value";
+    const _0xc84600 = _0x2ff42d ? _0x2ff42d.getAttribute("content") : "default_ip_value";
+    if (!_0x12a969 || _0x12a969.length !== 12) {
+      throw new Error("IV is invalid or not provided.");
+    }
+    if (!_0xc84600) {
+      throw new Error("IP is invalid or not provided.");
+    }
+    const _0x3ecac6 = navigator.language;
+    const _0x4627dd = await getBrowserFont();
+    const _0x21569c = {
+      Fingerprint: _0x4d62b9,
+      language: _0x3ecac6,
+      font: _0x4627dd,
+      ip: _0xc84600
+    };
+    const _0x3ac2ec = "oDbYqcGXX12FcqCb";
+    const _0x1b8e4c = await encryptData(JSON.stringify(_0x21569c), _0x3ac2ec, _0x12a969);
+    console.log("Encrypted data:", _0x1b8e4c);
+    document.cookie = "waf-trace=" + _0x1b8e4c + "; path=/; max-age=3600; samesite=Lax";
+    console.log("Encrypted fingerprint set in cookie:", _0x1b8e4c);
+  } catch (_0x1cf94e) {
+    console.error("Error in processing fingerprint:", _0x1cf94e);
   }
-  return _0x3a087e;
-}
-function md5(_0x47d651) {
-  return CryptoJS.MD5(_0x47d651).toString();
-}
-function isdbime(_0x21d51e) {
-  var _0x1a38e6 = /(iOS|Mac)/,
-    _0x4fc4ce = new RegExp(_0x1a38e6.source + ".*Edg");
-  return _0x4fc4ce.test(_0x21d51e);
-}
+}).catch(_0x5ec568 => {
+  console.error("Error in generating fingerprint:", _0x5ec568);
+});
