@@ -1,4 +1,4 @@
-//Mon Apr 28 2025 10:28:19 GMT+0000 (Coordinated Universal Time)
+//Mon Apr 28 2025 10:56:36 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
 self == top && ($("head").html("<meta charset=\"UTF-8\"><meta name=\"referrer\" content=\"no-referrer\"><title>404</title> "), $("body").html("404").show());
