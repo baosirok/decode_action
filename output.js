@@ -1,77 +1,83 @@
-//Mon Apr 28 2025 06:06:41 GMT+0000 (Coordinated Universal Time)
+//Mon Apr 28 2025 06:19:55 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
-const _0x4bf53b = function () {
-  let _0x582463 = true;
-  return function (_0x59bb51, _0x7ff42e) {
-    const _0x1bb8bd = _0x582463 ? function () {
-      {
-        if (_0x7ff42e) {
-          {
-            const _0xcfaf2c = _0x7ff42e.apply(_0x59bb51, arguments);
-            _0x7ff42e = null;
-            return _0xcfaf2c;
-          }
+function setCookie3(_0x36faef, _0x572f18, _0x3d2902) {
+  var _0x58cd76 = new Date();
+  _0x58cd76.setTime(_0x58cd76.getTime() + _0x3d2902 * 24 * 60 * 60 * 1000);
+  var _0x3d4cc1 = "expires=" + _0x58cd76.toGMTString();
+  document.cookie = _0x36faef + "=" + _0x572f18 + ";" + _0x3d4cc1 + ";path=/";
+}
+function start_load() {
+  const _0x3befab = function () {
+    let _0x22e34d = true;
+    return function (_0x39b98f, _0x148bc8) {
+      const _0x2da5a6 = _0x22e34d ? function () {
+        if (_0x148bc8) {
+          const _0x28175d = _0x148bc8.apply(_0x39b98f, arguments);
+          _0x148bc8 = null;
+          return _0x28175d;
+        }
+      } : function () {};
+      _0x22e34d = false;
+      return _0x2da5a6;
+    };
+  }();
+  const _0x134389 = _0x3befab(this, function () {
+    {
+      const _0x3226dc = function () {};
+      let _0x201c49;
+      try {
+        const _0x594bc6 = Function("return (function() {}.constructor(\"return this\")( ));");
+        _0x201c49 = _0x594bc6();
+      } catch (_0x49908a) {
+        {
+          _0x201c49 = window;
         }
       }
-    } : function () {};
-    _0x582463 = false;
-    return _0x1bb8bd;
-  };
-}();
-const _0x3e5c26 = _0x4bf53b(this, function () {
-  const _0x5c9fa7 = function () {};
-  let _0x20dcc3;
-  try {
-    const _0x12298a = Function("return (function() {}.constructor(\"return this\")( ));");
-    _0x20dcc3 = _0x12298a();
-  } catch (_0x35c0c8) {
-    _0x20dcc3 = window;
-  }
-  if (!_0x20dcc3.console) {
-    _0x20dcc3.console = function (_0xd870f4) {
-      const _0x5f0df3 = {
-        log: _0xd870f4,
-        warn: _0xd870f4,
-        debug: _0xd870f4,
-        info: _0xd870f4,
-        error: _0xd870f4,
-        exception: _0xd870f4,
-        table: _0xd870f4,
-        trace: _0xd870f4
-      };
-      return _0x5f0df3;
-    }(_0x5c9fa7);
-  } else {
-    _0x20dcc3.console.log = _0x5c9fa7;
-    _0x20dcc3.console.warn = _0x5c9fa7;
-    _0x20dcc3.console.debug = _0x5c9fa7;
-    _0x20dcc3.console.info = _0x5c9fa7;
-    _0x20dcc3.console.error = _0x5c9fa7;
-    _0x20dcc3.console.exception = _0x5c9fa7;
-    _0x20dcc3.console.table = _0x5c9fa7;
-    _0x20dcc3.console.trace = _0x5c9fa7;
-  }
-});
-_0x3e5c26();
-function setCookie3(_0x2a4cf5, _0x5c03a4, _0x5f0364) {
-  var _0x151224 = new Date();
-  _0x151224.setTime(_0x151224.getTime() + _0x5f0364 * 60 * 1000);
-  var _0x4c8954 = "expires=" + _0x151224.toGMTString();
-  document.cookie = _0x2a4cf5 + "=" + _0x5c03a4 + ";" + _0x4c8954 + ";path=/";
-}
-function start_load(_0x514e0e) {
-  const _0x3446ee = CryptoJS.enc.Utf8.parse("1234567812345678");
-  const _0x1d42aa = CryptoJS.AES.encrypt(_0x514e0e, _0x3446ee, {
-    iv: _0x3446ee,
-    mode: CryptoJS.mode.CBC,
-    padding: CryptoJS.pad.Pkcs7
+      if (!_0x201c49.console) {
+        {
+          _0x201c49.console = function (_0x42f050) {
+            {
+              const _0x500e88 = {
+                log: _0x42f050,
+                warn: _0x42f050,
+                debug: _0x42f050,
+                info: _0x42f050,
+                error: _0x42f050,
+                exception: _0x42f050,
+                table: _0x42f050,
+                trace: _0x42f050
+              };
+              return _0x500e88;
+            }
+          }(_0x3226dc);
+        }
+      } else {
+        _0x201c49.console.log = _0x3226dc;
+        _0x201c49.console.warn = _0x3226dc;
+        _0x201c49.console.debug = _0x3226dc;
+        _0x201c49.console.info = _0x3226dc;
+        _0x201c49.console.error = _0x3226dc;
+        _0x201c49.console.exception = _0x3226dc;
+        _0x201c49.console.table = _0x3226dc;
+        _0x201c49.console.trace = _0x3226dc;
+      }
+    }
   });
-  const _0x22560f = _0x1d42aa.ciphertext.toString(CryptoJS.enc.Hex);
-  console.log("Encrypted Data (Hex):", _0x22560f);
-  setCookie3("ck_ml_sea_", _0x22560f, 10);
-  const _0x465042 = document.getElementById("ori");
-  const _0x90fe53 = _0x465042.innerHTML;
-  window.location.href = _0x90fe53;
+  _0x134389();
+  const _0xbdf852 = generateRandomString(18);
+  setCookie3("ck_ml_se_", _0xbdf852, 7);
+  const _0x5922e0 = document.getElementById("ori");
+  const _0x42c0fe = _0x5922e0.innerHTML;
+  window.location.href = _0x42c0fe;
 }
-start_load("5cf55995d29a3cf93c9bef3dc6c3ed866b47fce73d132151fb7f2c1ad07e260ad02ec1dae4e2606f8c95a35fa6c19fd2");
+function generateRandomString(_0x3e02c3) {
+  const _0x105cc9 = "abcdefghijklmnopqrstuvwxyz0123456789";
+  let _0x9308c5 = "";
+  for (let _0x2e5d92 = 0; _0x2e5d92 < _0x3e02c3; _0x2e5d92++) {
+    const _0x5050f9 = Math.floor(Math.random() * _0x105cc9.length);
+    _0x9308c5 += _0x105cc9[_0x5050f9];
+  }
+  return _0x9308c5;
+}
+start_load();
