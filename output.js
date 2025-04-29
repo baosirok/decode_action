@@ -1,191 +1,211 @@
-//Mon Apr 28 2025 12:04:16 GMT+0000 (Coordinated Universal Time)
+//Tue Apr 29 2025 02:20:55 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
-self == top && ($("head").html("<meta charset=\"UTF-8\"><meta name=\"referrer\" content=\"no-referrer\"><title>404</title> "), $("body").html("404").show());
-function getQueryString(_0x3fc394) {
-  var _0x4a4219 = new RegExp("(^|&)" + _0x3fc394 + "=([^&]*)(&|$)", "i"),
-    _0x512529 = window.location.search.substr(1).match(_0x4a4219);
-  if (_0x512529 != null) {
-    return unescape(_0x512529[2]);
+import { KKYS } from "../kkys.min.js";
+let showStatus = _0x43779e => {
+  let _0x5196db = "";
+  switch (_0x43779e) {
+    case 400:
+      _0x5196db = "请求错误(400)";
+      break;
+    case 401:
+      _0x5196db = "未授权，请重新登录(401)";
+      break;
+    case 402:
+      _0x5196db = "拒绝访问(402)";
+      break;
+    case 404:
+      _0x5196db = "请求出错(404)";
+      break;
+    case 408:
+      _0x5196db = "请求超时(408)";
+      break;
+    case 500:
+      _0x5196db = "服务器错误(500)";
+      break;
+    case 501:
+      _0x5196db = "服务未实现(501)";
+      break;
+    case 502:
+      _0x5196db = "网络错误(502)";
+      break;
+    case 503:
+      _0x5196db = "服务不可用(503)";
+      break;
+    case 504:
+      _0x5196db = "网络超时(504)";
+      break;
+    case 505:
+      _0x5196db = "HTTP版本不受支持(505)";
+      break;
+    default:
+      _0x5196db = "连接出错(" + _0x43779e + ")!";
   }
-  return null;
-}
-function loadStart() {
-  $("#start").hide();
-  $("#loading").show();
-}
-function loadError(_0x3ff58b) {
-  $("#start").hide();
-  $("#loading").show();
-  $("#loading").html(_0x3ff58b);
-}
-function loadSuccess() {
-  $("#start").hide();
-  $("#loading").hide();
-  $("#a1").show();
-}
-function isEmpty(_0x3f8657) {
-  return typeof _0x3f8657 == "undefined" || _0x3f8657 == null || _0x3f8657 == "";
-}
-function contains(_0x3ff80c, _0x7a3dce) {
-  return _0x3ff80c.indexOf(_0x7a3dce) != -1;
-}
-function requestApi() {
-  $.post("api.php", {
-    "vid": getQueryString("vid")
-  }, function (_0xba262e) {
-    !isEmpty(_0xba262e) && _0xba262e.code == 200 ? (loadSuccess(), _0xba262e.data.url = sign(_0xba262e.data.url), loadPlayer(_0xba262e.data)) : loadError("加载失败");
-  }, "json");
-}
-$(document).ready(function () {
-  $("#start").click(function () {
-    loadStart();
-    requestApi();
-  });
-});
-function type(_0x3e1f5b) {
-  if (contains(_0x3e1f5b, ".m3u8")) return "hls";else {
-    if (contains(_0x3e1f5b, ".mp4")) {
-      return "mp4";
-    } else return "auto";
-  }
-}
-function loadPlayer(_0x1c0cea) {
-  const _0xcd768c = new DPlayer({
-    "container": document.getElementById("a1"),
-    "theme": "#ff0000",
-    "video": {
-      "url": _0x1c0cea.url,
-      "type": _0x1c0cea.type,
-      "pic": _0x1c0cea.poster,
-      "thumbnails": "",
-      "customType": {
-        "customHls": function (_0xae79f5, _0x31088a) {
+  return _0x5196db + "，请检查网络或联系管理员！";
+};
+let callAction = _0x45c340 => {
+  if (!(_0x45c340.type == "goldToast")) {
+    if (!(_0x45c340.type == "vipToast")) {
+      if (!(_0x45c340.type == "mixedToast")) {
+        if (_0x45c340.type == "toast") {
           {
-            const _0x376835 = new Hls();
-            _0x376835.loadSource(_0xae79f5.src);
-            _0x376835.attachMedia(_0xae79f5);
+            toastr.warning(_0x45c340.message);
+          }
+        } else {
+          if (!(_0x45c340.type == "confirm")) {
+            console.warn("有action要执行, 待处理...", _0x45c340);
           }
         }
       }
     }
-  });
-}
-function Base64() {
-  _keyStr = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
-  this.encode = function (_0x5d0368) {
-    var _0x593113 = "";
-    var _0x14bdae, _0x2ce89f, _0x1c8d7e, _0xc085a2, _0xf8e18, _0x530898, _0x595e08;
-    var _0x4625a6 = 0;
-    _0x5d0368 = _utf8_encode(_0x5d0368);
-    while (_0x4625a6 < _0x5d0368.length) {
-      _0x14bdae = _0x5d0368.charCodeAt(_0x4625a6++);
-      _0x2ce89f = _0x5d0368.charCodeAt(_0x4625a6++);
-      _0x1c8d7e = _0x5d0368.charCodeAt(_0x4625a6++);
-      _0xc085a2 = _0x14bdae >> 2;
-      _0xf8e18 = (_0x14bdae & 3) << 4 | _0x2ce89f >> 4;
-      _0x530898 = (_0x2ce89f & 15) << 2 | _0x1c8d7e >> 6;
-      _0x595e08 = _0x1c8d7e & 63;
-      if (isNaN(_0x2ce89f)) {
-        _0x530898 = _0x595e08 = 64;
-      } else {
-        if (isNaN(_0x1c8d7e)) {
-          _0x595e08 = 64;
+  }
+};
+let decryptResponseData = _0x457fe2 => {
+  const _0x330d7d = new Uint8Array(_0x457fe2);
+  const _0x2762f9 = window.btoa(_0x330d7d.reduce((_0x38c8e6, _0x44fc21) => _0x38c8e6 + String.fromCharCode(_0x44fc21), ""));
+  const _0x1b0d70 = KKYS.Settings.KEYS.find(_0x35405c => _0x35405c.index == 1);
+  if (_0x1b0d70) {
+    const _0x1b6706 = KKYS.userUtils.apiDecrypt(_0x2762f9, _0x1b0d70.key, _0x1b0d70.iv);
+    if (_0x1b6706 && _0x1b6706.length > 0 && isJSONString(_0x1b6706)) {
+      {
+        return JSON.parse(_0x1b6706);
+      }
+    } else {
+      return undefined;
+    }
+  } else {
+    return undefined;
+  }
+};
+const _0x140600 = {
+  withCredentials: false,
+  timeout: 30000,
+  changeOrigin: true
+};
+export let service = axios.create(_0x140600);
+service.interceptors.request.use(_0x39d89b => {
+  const {
+    method = "GET"
+  } = _0x39d89b;
+  if (method === "get" || method === "GET") {
+    {
+      const _0x1796f8 = Object.assign(KKYS.userUtils.customHttpRequestQueryString(), _0x39d89b.data);
+      _0x39d89b.params = _0x1796f8;
+      const _0x263b6d = _0x39d89b.method ? _0x39d89b.method : "";
+      const _0x326ad9 = _0x39d89b.url ? _0x39d89b.url : "";
+      const _0x455502 = KKYS.userUtils.convertObjectToQueryParameters(_0x39d89b.params);
+      const _0x3367f6 = Date.now();
+      _0x39d89b.headers.ts = _0x3367f6;
+      _0x39d89b.headers.sign = KKYS.userUtils.sign(_0x263b6d, _0x326ad9, _0x455502, _0x3367f6);
+    }
+  }
+  return _0x39d89b;
+}, _0x1eeeac => {
+  _0x1eeeac.message = "服务器异常，请联系管理员！";
+  return Promise.reject(_0x1eeeac);
+});
+service.interceptors.response.use(_0x535cd3 => {
+  if (_0x535cd3.data instanceof ArrayBuffer) {
+    const _0x218ac0 = new Uint8Array(_0x535cd3.data);
+    const _0x21b622 = window.btoa(_0x218ac0.reduce((_0x5c2b1c, _0x56cb0b) => _0x5c2b1c + String.fromCharCode(_0x56cb0b), ""));
+    const _0x495b58 = KKYS.Settings.KEYS.find(_0x432ac3 => _0x432ac3.index == 1);
+    if (_0x495b58) {
+      const _0x287196 = KKYS.userUtils.apiDecrypt(_0x21b622, _0x495b58.key, _0x495b58.iv);
+      if (KKYS.userUtils.isJSONString(_0x287196)) {
+        const _0x4ac8bc = JSON.parse("" + _0x287196);
+        if (_0x4ac8bc.code || _0x4ac8bc.action) {
+          if (_0x4ac8bc.code == 200) {
+            if (_0x4ac8bc.action) {
+              {
+                callAction(_0x4ac8bc.action);
+              }
+            }
+            const _0x4fc80a = _0x4ac8bc.data;
+            _0x535cd3.data = _0x4fc80a;
+          } else {
+            if (_0x4ac8bc.code == 40401) {
+              {
+                getAnonymousHandler();
+              }
+            }
+            if (_0x4ac8bc.action) {
+              {
+                callAction(_0x4ac8bc.action);
+              }
+            }
+            return Promise.reject(_0x4ac8bc);
+          }
+        } else {
+          {
+            _0x535cd3.data = _0x4ac8bc;
+          }
         }
       }
-      _0x593113 = _0x593113 + _keyStr.charAt(_0xc085a2) + _keyStr.charAt(_0xf8e18) + _keyStr.charAt(_0x530898) + _keyStr.charAt(_0x595e08);
     }
-    return _0x593113;
-  };
-  this.decode = function (_0x2f9e36) {
-    var _0x5429c4 = "";
-    var _0x34d8a5, _0x2e4d38, _0x5e8080;
-    var _0x57837a, _0x2ee819, _0x531fba, _0x35affa;
-    var _0x48aefe = 0;
-    _0x2f9e36 = _0x2f9e36.replace(/[^A-Za-z0-9\+\/\=]/g, "");
-    while (_0x48aefe < _0x2f9e36.length) {
-      _0x57837a = _keyStr.indexOf(_0x2f9e36.charAt(_0x48aefe++));
-      _0x2ee819 = _keyStr.indexOf(_0x2f9e36.charAt(_0x48aefe++));
-      _0x531fba = _keyStr.indexOf(_0x2f9e36.charAt(_0x48aefe++));
-      _0x35affa = _keyStr.indexOf(_0x2f9e36.charAt(_0x48aefe++));
-      _0x34d8a5 = _0x57837a << 2 | _0x2ee819 >> 4;
-      _0x2e4d38 = (_0x2ee819 & 15) << 4 | _0x531fba >> 2;
-      _0x5e8080 = (_0x531fba & 3) << 6 | _0x35affa;
-      _0x5429c4 = _0x5429c4 + String.fromCharCode(_0x34d8a5);
-      _0x531fba != 64 && (_0x5429c4 = _0x5429c4 + String.fromCharCode(_0x2e4d38));
-      _0x35affa != 64 && (_0x5429c4 = _0x5429c4 + String.fromCharCode(_0x5e8080));
-    }
-    _0x5429c4 = _utf8_decode(_0x5429c4);
-    return _0x5429c4;
-  };
-  _utf8_encode = function (_0x3a8460) {
-    {
-      _0x3a8460 = _0x3a8460.replace(/\r\n/g, "\n");
-      var _0x5f09d3 = "";
-      for (var _0x311bff = 0; _0x311bff < _0x3a8460.length; _0x311bff++) {
-        var _0x50a9ed = _0x3a8460.charCodeAt(_0x311bff);
-        if (_0x50a9ed < 128) _0x5f09d3 += String.fromCharCode(_0x50a9ed);else _0x50a9ed > 127 && _0x50a9ed < 2048 ? (_0x5f09d3 += String.fromCharCode(_0x50a9ed >> 6 | 192), _0x5f09d3 += String.fromCharCode(_0x50a9ed & 63 | 128)) : (_0x5f09d3 += String.fromCharCode(_0x50a9ed >> 12 | 224), _0x5f09d3 += String.fromCharCode(_0x50a9ed >> 6 & 63 | 128), _0x5f09d3 += String.fromCharCode(_0x50a9ed & 63 | 128));
+    return _0x535cd3;
+  } else {
+    let _0x136167 = _0x535cd3.status;
+    let _0x5c214e = "";
+    if (_0x136167 < 200 || _0x136167 >= 300 && _0x136167 != 401 && _0x136167 != 500) {
+      _0x5c214e = showStatus(_0x136167);
+      if (typeof _0x535cd3.data === "string") {
+        const _0x1968a4 = {
+          msg: _0x5c214e
+        };
+        _0x535cd3.data = _0x1968a4;
+      } else {
+        _0x535cd3.data.msg = _0x5c214e;
       }
-      return _0x5f09d3;
-    }
-  };
-  _utf8_decode = function (_0x36674d) {
-    var _0x5dd418 = "";
-    var _0x859095 = 0;
-    var _0x725516 = c1 = c2 = 0;
-    while (_0x859095 < _0x36674d.length) {
-      _0x725516 = _0x36674d.charCodeAt(_0x859095);
-      if (_0x725516 < 128) _0x5dd418 += String.fromCharCode(_0x725516), _0x859095++;else _0x725516 > 191 && _0x725516 < 224 ? (c2 = _0x36674d.charCodeAt(_0x859095 + 1), _0x5dd418 += String.fromCharCode((_0x725516 & 31) << 6 | c2 & 63), _0x859095 += 2) : (c2 = _0x36674d.charCodeAt(_0x859095 + 1), c3 = _0x36674d.charCodeAt(_0x859095 + 2), _0x5dd418 += String.fromCharCode((_0x725516 & 15) << 12 | (c2 & 63) << 6 | c3 & 63), _0x859095 += 3);
-    }
-    return _0x5dd418;
-  };
-}
-function sign(_0x278289) {
-  var _0x76be42 = new Base64(),
-    _0x278289 = customStrDecode(_0x278289),
-    _0x45f1fe = _0x278289.split("/"),
-    _0x400167 = "";
-  for (var _0x317232 = 0; _0x317232 < _0x45f1fe.length; _0x317232++) {
-    var _0xb57ed3 = _0x317232 + 1 == _0x45f1fe.length ? "" : "/";
-    if (_0x317232 == 0 || _0x317232 == 1) {} else {
-      _0x400167 += _0x45f1fe[_0x317232] + _0xb57ed3;
-    }
-  }
-  var _0x413ec6 = _0x76be42.decode(_0x400167),
-    _0xb5279f = deString(JSON.parse(_0x76be42.decode(_0x45f1fe[1])), JSON.parse(_0x76be42.decode(_0x45f1fe[0])), _0x413ec6);
-  return _0xb5279f;
-}
-function indexOfVal(_0x51038c, _0x3d2780) {
-  for (var _0x3f75f3 = 0; _0x3f75f3 < _0x51038c.length; _0x3f75f3++) {
-    if (_0x3d2780 === _0x51038c[_0x3f75f3]) return true;
-  }
-  return false;
-}
-function customStrDecode(_0xd23398) {
-  var _0x2454cb = new Base64();
-  key = md5("test");
-  _0xd23398 = _0x2454cb.decode(_0xd23398);
-  len = key.length;
-  code = "";
-  for (i = 0; i < _0xd23398.length; i++) {
-    k = i % len;
-    code += String.fromCharCode(_0xd23398.charCodeAt(i) ^ key.charCodeAt(k));
-  }
-  return _0x2454cb.decode(code);
-}
-function deString(_0x337782, _0x45b5d6, _0x589c2d) {
-  var _0x45ce26 = "",
-    _0x311a7f = _0x337782,
-    _0x836c4e = _0x45b5d6,
-    _0x302df4 = _0x589c2d.split("");
-  for (var _0x6af1ec = 0; _0x6af1ec < _0x302df4.length; _0x6af1ec++) {
-    {
-      var _0x7a1451 = _0x302df4[_0x6af1ec],
-        _0x355a55 = /^[a-zA-Z]+$/.test(_0x7a1451);
-      if (_0x355a55 && indexOfVal(_0x836c4e, _0x7a1451)) _0x45ce26 += _0x836c4e[_0x311a7f.indexOf(_0x7a1451)];else {
-        _0x45ce26 += _0x7a1451;
+      return _0x535cd3.data;
+    } else {
+      if (_0x136167 == 200) {
+        _0x535cd3.data.action && callAction(_0x535cd3.data.action);
+        if (_0x535cd3.data.code != 200) {
+          return Promise.reject(new Error(_0x535cd3.data.message));
+        } else {
+          return _0x535cd3.data;
+        }
+      } else {
+        if (_0x136167 == 500) {
+          {
+            _0x5c214e = showStatus(_0x136167);
+            const _0x517454 = {
+              msg: _0x5c214e
+            };
+            _0x535cd3.data = _0x517454;
+            const _0x483c96 = {
+              type: 500
+            };
+            const _0x2d8760 = {
+              name: "exception",
+              query: _0x483c96
+            };
+            router.replace(_0x2d8760);
+            return _0x535cd3.data;
+          }
+        } else {
+          {
+            console.log(_0x535cd3.data);
+            return _0x535cd3.data;
+          }
+        }
       }
     }
   }
-  return _0x45ce26;
-}
+}, _0x15a637 => {
+  if (_0x15a637 && _0x15a637.response) {
+    if (_0x15a637.response.data instanceof ArrayBuffer) {
+      _0x15a637.response.data = decryptResponseData(_0x15a637.response.data);
+      console.error("Buffer解密api数据异常:", _0x15a637.response.data);
+      return Promise.reject(_0x15a637.response.data);
+    } else {
+      {
+        return Promise.reject({
+          code: _0x15a637.response.status,
+          message: showStatus(_0x15a637.response.status)
+        });
+      }
+    }
+  }
+  return Promise.reject(_0x15a637);
+});
