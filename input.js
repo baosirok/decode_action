@@ -1,38 +1,4 @@
-<!DOCTYPE html>
-<html lang="zh-cn">
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>player</title>
-        <meta name="referrer" content="same-origin">
-        <style type="text/css">
-            *,*::before,*::after {
-                box-sizing: border-box;
-                margin: 0;
-                padding: 0;
-                list-style: none;
-            }
-
-            html,body {
-                width: 100%;
-                height: 100%;
-                overflow: hidden;
-            }
-
-            .stationLogo {
-                position: absolute;
-                right: -20px;
-                top: 10px;
-                display: block;
-                height: 40px;
-                z-index: 99998;
-            }
-        </style>
-    </head>
-    <body style="margin:0px; height:100%;">
-        <div id="player" style="width:100%;height:100%;overflow:hidden;"></div>
-        <script type="text/javascript">
-            function $(id) {
+function $(id) {
                 return document.getElementById(id);
             }
             function dw(str) {
@@ -774,45 +740,3 @@
                 } catch (_0x39300d) {}
             }
             ;_0xodS = 'jsjiami.com.v6';
-        </script>
-        <script type="text/javascript" src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/hls.js/0.14.17/hls.min.js"></script>
-        <script type="text/javascript" src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/dplayer/1.26.0/DPlayer.min.js"></script>
-        <script>
-            const m3u8Url = originalUrl;
-            // 请替换为实际的M3U8地址
-
-            var isiPad = navigator.userAgent.match(/iPad|iPhone|Android|Linux|iPod/i) != null;
-            if (isiPad) {
-                document.getElementById('player').innerHTML = '<video controls="controls" autoplay="autoplay" width="100%" height="100%"><source src="' + m3u8Url + '" type="application/x-mpegURL" /></video>';
-            } else {
-                var dp = new DPlayer({
-                    container: document.getElementById('player'),
-                    live: true,
-                    autoplay: true,
-                    theme: "#FADFA3",
-                    loop: false,
-                    screenshot: true,
-                    hotkey: true,
-                    preload: "metadata",
-                    mutex: true,
-                    video: {
-                        url: "" + m3u8Url + "",
-                        "name": "",
-                        type: 'hls',
-                        referrerPolicy: "no-referrer"
-                    }
-                });
-                document.getElementById('player').oncontextmenu = function() {
-                    document.querySelector('.dplayer-menu').style.display = "none";
-                    document.querySelector('.dplayer-mask').style.display = "none";
-                    return false;
-                }
-                ;
-                setTimeout(function() {
-                    dp.play();
-                }, 1000);
-            }
-        </script>
-        <script type="text/javascript" src="https://cloud.yumixiu768.com/player/t.js"></script>
-    </body>
-</html>
