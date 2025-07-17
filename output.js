@@ -1,4 +1,4 @@
-//Thu Jul 17 2025 08:09:29 GMT+0000 (Coordinated Universal Time)
+//Thu Jul 17 2025 08:14:41 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
 function restoreUrl(_0x23f89b) {
