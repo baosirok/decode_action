@@ -1,24 +1,4 @@
-function $(id) {
-                return document.getElementById(id);
-            }
-            function dw(str) {
-                document.write(str);
-            }
-            function J_get(name, url) {
-                url = url ? url : self.window.document.location.href;
-                var start = url.indexOf(name + '=');
-                if (start == -1)
-                    return '';
-                var len = start + name.length + 1;
-                var end = url.indexOf('######', len);
-                if (end == -1)
-                    end = url.length;
-                return unescape(url.substring(len, end));
-            }
-
-            var encryptedBase64Str = J_get('id');
-
-            var _0xodS = 'jsjiami.com.v6'
+var _0xodS = 'jsjiami.com.v6'
               , _0xodS_ = function() {
                 return ['‮_0xodS'],
                 _0xb0d8 = [_0xodS, 'S8OXZGk=', 'HR9MKMKw', 'BcKkw7A+w6A=', 'wrPCkcOIw4DDjg==', 'w6EFw5LDrlQ=', 'w7TDm8OYEsKZ', 'w5PDsQjDgEE=', 'FsK/w6kkw5s=', 'AcOQw48BOw==', 'XMOrYcOn', 'C0MBw4NS', 'wpXCmE3DvS8=', 'YkFqwq0P', 'P8KPP8KpwpQ=', 'w4bDgw7CmBQ=', 'w6Uzw5wKWA==', 'wpTCvnjCjsKMU13Cn23ChcOdwpkFdUjDk8Oe', 'ZsOuXsKaTcOVw53Dn3Y=', 'wrPChMORw6/DjQ==', 'w4o+w5c+aQ==', 'fMOiUMKaSMOI', 'w7Ysw7/DlcKcwqnDkg==', 'w5vDnAXDtHY=', 'A8KmUcOuwq4=', 'w6vDuyjCugA=', 'wpHDnAk=', 'AEkPw74=', 'RcKIZHl6', 'bsKxRhDDkS9OEsOf', 'XMOwJT7CqQ==', 'a19CUMO+', 'wojCj8Oxw5bDgw==', 'GStxIsKJ', 'wqoWOMO4', 'w7bDhMOGDcKPwpzDkA==', 'wqkFK8O1wpQ=', 'QENOwo8K', 'wp3DkBkjw6bDmGE=', 'w5nDiyrDrQ==', 'b8KsRwDDhg==', 'QE9VUMOb', 'GsK/TsOSwpE=', 'w60Pw7XDjVI=', 'w5DDj8KfE1A=', 'w5XCpz7Cl8OMXA8=', 'G2I1Pw==', 'TsOlIRvCvsKCw43DrSnDmGQ=', 'w7DDmSvCpwo=', 'w44wHcKG', 'wqtgwo8=', 'wqh9b8OcUMOf', 'woJ8UQ==', 'P8OCw48lIg==', 'VcOmUHHCkA==', 'wrbCjUUVw4s=', 'LcKzLMKiwrY=', 'N8OXVcOcEQ==', 'w5nDhCE=', 'w53CsgrCgcOS', 'w5fDncKyL0s=', 'w6HDh33DjMKh', 'KMK2TSvCpQ==', 'wqdJFsOSVg==', 'wqwPw6hJZQ==', 'wpHDlgDCnAFH', 'w7Mlw57DpcKf', 'QUjCrRXCrQ==', 'wq12wotdT8O1', 'JMKUIsOzw7Y=', 'L8K6TMOYwpFcwrPDlEPDrMOcwq49eMKLwox3F8K9w6bDrsOULw==', 'wpHCjlodw5c=', 'wrJ1EMOVYA==', 'LQpfIcKf', 'w6HDhhDClxkrwok5Q2DCs8OTBzjDnmvCtMOiDcOqwo7Dk8Or', 'A8OELiU=', 'wrR3TMOJMg==', 'wr9AQ8Ozbg==', 'I8O8CMKDGMOAwoLDhiY=', 'QsKpScKwwo8=', 'dMKTVcKUwpc=', 'BsKpTkPDmg==', 'ccKAUiHDoA==', 'wo44MsO3wr0=', 'wqJfEsOOCg==', 'wrrCosOFwrXCsg==', 'JBAODw==', 'wr9dJMOCfQ==', 'w6Y3w6PDj8KdwqI=', 'CD9tKMK6', 'bEjCpgjCuw==', 'w6kow5zDrF8=', 'w7DCqcOaCFE=', 'wqTDhsOiwrQ=', 'w5U7w5kHRA==', 'N3gyMnY0w5h+w4TDh8KXwo1DNCgOw59ODCZ5SHs=', 'acOYdlTCnw==', 'w4DCgSHCt8Or', 'ekF5U34=', 'wpwbIcOHCQ==', 'w6kzw6cRXw==', 'woB8W8OICsOQ', 'fsO+YVbCiQ==', 'wo3DmgQcw78=', 'IcKmw4IDw7c=', 'IsKBacOKwrM=', 'RGJ6woQJ', 'LsKoGsK8wro=', 'w5jDosOmPcKR', 'D8KPbkPDqQ==', 'wrPCocONw4HDoQ==', 'wqpDeMO2eA==', 'wofDtz0Rw4o=', 'BsOhZ8O1Bg==', 'YHbCrjvCmA==', 'LGEvw4ha', 'w6bCp8OcKFrCgMKJ', 'U8OdcA==', 'w4PDlhzCgQo=', 'YsKnQxo=', 'w6BkIsOvdA==', 'wooIBsOxDsOhwoPDscK1', 'JMOYw6QuEA==', 'fFrCnjTCuA==', 'wrBVwo54WA==', 'wpHCk8OJwprCrA==', 'w7JkHsOMfg==', 'VcO0NBDCmQ==', 'wpfDsRfCgRM=', 'GXk9E0s=', 'FsK2KMKMwpo=', 'TcKeVMKPwr0=', 'w7MOw4PDpcKl', 'R8OJIgbCkQ==', 'wpRpLcOIEg==', 'E8KDfirCsQ==', 'w78Xw5jDl3E=', 'MsKnFcOew7I=', 'EMK6w68Hw7o=', 'YMKwXzDDuA==', 'CyttJ8KE', 'ZsKZXMKHwqM=', 'w5diCcOBZA==', 'w7nDjsOGGcKUwpg=', 'YsKnTAE=', 'GGMsJHY=', 'aMOAdVjCgQ==', 'wpbDkTzCgxk=', 'Y8KZSzbDpWYAO2fCmVwpBGPDuQRUw5MdJ2I2GHVRwpjCoMOPExo3BcOZNsKew4cKw7jCmcO7w63Ds0URDQpFwrjCqnHCg8KrY8OQw7loasODLhZKL8O8w5g=', 'w6PCrgrCgMOw', 'woN7X8OKHcOM', 'wq1qw5ozwoE=', 'w4vDg0cswr3DiDfDpMODw58BVMKt', 'wrLCiV0aw5A=', 'XVlEb1g=', 'MHE4w7ZO', 'NMKzYTvCvVfDtHczAMOuUSnCusKZwq4=', 'V8O+c27CiQ==', 'fGtlwq0q', 'w5HDvArDs1A=', 'woh+KsOZCA==', 'ScOnBQfCvQ==', 'wprDhRUiw44=', 'w5fCucKyw6fDiA==', 'w6hhJsO2Zw==', 'QU7CswTCtQ==', 'dFxRwpY7', 'AGw4E24=', 'wpHCosOVwpDCiw==', 'e8K8Vh0=', 'w4oqw7PDkUo=', 'McOMUMOaIg==', 'w7/DgSTClic=', 'bVpdwoUv', 'woBMwrvDmcKd', 'w5PCpMKDw6nDkA==', 'YcKpQ8KWwq/CkMK2wpjCucKhAcKbwpPDu8KvwrlEw7gywq/DscKmwo8=', 'wpUlDMO8woU=', 'L8KNw4ELw6o=', 'wqFfwrHDrcK/ag==', 'wrl4RMO5MQ==', 'w5/Dsx/DpUw=', 'YMORY8KeTA==', 'csK9XMKjwpQ=', 'w4/CjizCgcOy', 'MMKVe8O2wrc=', 'wqRNZMO7Dw==', 'w6LCmcKdw5HDrA==', 'wrhUXcOqLQ==', 'DcKTw7Yvw5Q=', 'w6zDhAnCtgE=', 'w6UIw4vDtlY=', 'wqlpVsObEA==', 'wpVWw64GwoY=', 'wql4d8OKDg==', 'JMOPw7Y5', 'wp8FP8OTNQ==', 'aMKhRBzDjw==', 'jsjiami.bcUPPJfLOgomQ.pveYd6Q=='];
