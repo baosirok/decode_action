@@ -1,4 +1,4 @@
-var _0xodf =  'jsjiami.com.v7';
+
 var _0xd0e3bd =  _0x4cfd;
 if (function (_0x473dfa,  _0x151273,  _0x1695f2,  _0x335d2f,  _0x86a51d,  _0x467234,  _0x215fe6) {
      _0x473dfa =  _0x473dfa >>  0x3;
@@ -2571,4 +2571,4 @@ var Decode1 =  {
         }
     }
 };
-var version_ =  'jsjiami.com.v7';
+
