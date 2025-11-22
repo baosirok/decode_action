@@ -1,42 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="referrer" content="never">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
-        <title>~</title>
-        <script type="text/javascript" src="//lib.baomitu.com/jquery/3.5.1/jquery.min.js"></script>
-        <script type="text/javascript" src="//lib.baomitu.com/hls.js/1.2.5/hls.min.js"></script>
-        <script type="text/javascript" src="//lib.baomitu.com/blueimp-md5/2.19.0/js/md5.min.js"></script>
-        <style type="text/css">
-            body,html,.content {
-                padding: 0;
-                margin: 0;
-                width: 100%;
-                height: 100%;
-                color: #999;
-            }
 
-            #a1 {
-                height: 100%;
-                z-index: 9999999999;
-            }
-        </style>
-    </head>
-    <body>
-        <div id="start" class="content" style="width: 100%;height: 100%;background: url('https://p0.meituan.net/csc/79686fc943815678d27c696464af2e175667.png') no-repeat center center;background-size: 70px 70px;display: flex;justify-content: center;align-items: center;" align="center"></div>
-        <div id="loading" class="content" style="font-weight:bold;padding-top:110px;display:none;" align="center">
-            正在加载数据中...<br>
-            <br>
-        </div>
-        <div id="a1" style="width:100%;height:100%;display:none;"></div>
-        <div id="error" class="content" style="display:none;font-weight:bold;padding-top:110px;" align="center">
-            <br>
-            <br>
-        </div>
-    </body>
-    <script type="text/javascript">
 
         var _0xodf = 'jsjiami.com.v7';
         var _0xd0e3bd = _0x4cfd;
@@ -1320,5 +1282,3 @@
             }
         };
         var version_ = 'jsjiami.com.v7';
-    </script>
-</html>
